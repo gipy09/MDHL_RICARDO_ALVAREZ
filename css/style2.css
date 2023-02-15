@@ -114,12 +114,7 @@ main{
 .news .mail{
   text-align: center;
 }
-footer{ 
-  margin-top: 100px;
-  height: 5vh;
-  background-color: #5fa199;
-  width: 100%;
-}
+
 .bannerlogo{
   display: flex;
   align-items: center;
@@ -170,4 +165,24 @@ th{
 .titletable{
   color: #000000;
   font-size: 18px;
+}
+footer{ 
+  margin-top: 100px;
+  height: 100%;
+  background-color: #5fa199;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer p{
+  font-size: 25px;
+  color: #fff;
+}
+footer img{
+  margin-left: 40px;
+  width: 80px;
+}
+.social img{
+  width: 20px;
 }
