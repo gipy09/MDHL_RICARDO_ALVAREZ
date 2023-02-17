@@ -10,6 +10,7 @@ body {
   background-color: #dbdbdb;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -20,14 +21,13 @@ body {
   padding: 3rem;
 }
 .title {
-  width: 40%;
   color: #fff;
   font-size: 25px;
-  display: inline;
 }
-
+.navigation{
+  display: flex;
+}
 .navigation a {
-  display: inline-block;
   text-align: center;
   text-decoration: none;
   color: #000000;
@@ -46,9 +46,10 @@ a[href="#"] {
   background-color: #808080;
   border: 2px solid rgb(206, 206, 206);
 }
-main{
+.mains{
   height: 100vh;
 }
+
 .main {
   margin-top: 3rem;
   display: flex;
@@ -58,8 +59,9 @@ main{
 
 .main-box {
   display: flex;
+  
   width: 90%;
-  padding: 3rem;
+  padding: 2rem;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.137);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -124,10 +126,7 @@ main{
   max-width: 40%;
   min-width: 150px;
 }
-.info{
-  display: flex;
-    justify-content: center;
-}
+
 
 scroll-container {
   display: inline-block;
@@ -168,12 +167,12 @@ th{
 }
 footer{ 
   margin-top: 100px;
-  height: 100%;
   background-color: #5fa199;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+
 }
 footer p{
   font-size: 25px;
@@ -183,6 +182,224 @@ footer img{
   margin-left: 40px;
   width: 80px;
 }
+.social{
+  display: flex;
+}
 .social img{
   width: 20px;
 }
+/*navbar*/
+
+@media (max-width:996px){
+  .main-box{
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 0;  
+  }
+  .navigation a {  
+    margin: 0 5px 0 5px;
+    width: 5rem;
+    padding: 8px 0 8px 0;
+    transition: all 0.6s;
+    font-size: 10px;
+  }
+  .title {
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+  }
+  .main-box .second-title {
+    padding-top: 25px;
+  }
+}
+@media (max-width:925px){
+  .main-box{
+    flex-direction: column;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width:604px){
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #5fa199;
+  }
+ 
+}
+/*navbar*/
+/*main-box*/
+@media (max-width:951px){
+  .banner{
+    display: none;
+  }
+}
+
+/*main-box*/
+
+/* in rules*/
+@media (max-width:865px){
+  .main-box{
+    flex-direction: column;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+@media (max-width:685px){
+  scroll-container {
+    width: 400px;
+    height: 300px;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+/*in rules*/
+/*in information*/
+@media (max-width:672px){
+  footer .social{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  footer .social img{
+    margin: 5px 0 5px 0;
+  }
+}
+@media (max-width:505px){
+  .logo-info {
+    margin-top: 50px;
+    height: 100px;
+  }
+  .logo-info img{
+      width:100px;
+  }
+}
+/*in information*/
+/*estilo de "ver mapa"*/
+table td a{
+  background-color: #5fa199;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  padding: 2px 10px 2px 10px;
+  text-decoration: none;
+}
+
+/*estilo de "ver mapa"*/
+
+table td{
+  height: 40px;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.mapa{
+  height: 100%;
+  width: 100%;
+}
+.titleForm{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.form{
+  justify-content: center;
+  
+}
+
+
+.form{
+  width: 50%;
+  flex-direction: column;
+}
+input{
+  margin: 10px;
+}
+.datos{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.optionsL .sex{
+  display: flex;
+}
+.options{
+  margin: 30px 0 30px 0;
+
+}
+.optionsL,.optionsR{
+  width: 60%;
+}
+.inputs{
+  width: 80%;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #5fa199;
+}
+
+.btn{
+  width: 120px;
+  height: 30px;
+  color: #fff;
+  background-color: #5fa199;
+  border: none;
+  border-radius: 10px;
+  float: right;
+  font-size: 18px;
+}
+.preschool{
+  display: flex;
+  width: 100%;
+}
+.grade {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+h3{
+  text-align: center;
+   margin: 20px 0 30px 0;
+  border-bottom: 3px solid #5fa199;
+  }
+@media (max-width:913px){
+  .datos, .options{
+    flex-direction: column;
+    align-items: center;
+  }
+  .grade,.sex{
+   display: flex;
+   flex-direction: column;
+  }
+ 
+  .optionsL, .optionsR{
+    display: flex;
+
+    flex-direction: column;
+  }
+}
+@media (max-width:885px){
+ 
+   .grade .optionsL{
+   flex-direction: column;
+  }
+}
+
+@media (max-width:581px){
+ 
+  .grade{
+  flex-direction: column;
+ }
+}
+
